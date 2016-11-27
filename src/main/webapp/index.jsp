@@ -23,13 +23,21 @@
 			<h4>JSON Parser</h4>
 			<p><a href="#" id="json">http://json.parser.online.fr/</a></p>
 		</div>
+		<br>
+		<div>
+			<h4>Check H2 Console</h4>
+			<p><a href="#" id="console">http://localhost:8080/console/</a></p>
+			<p>- Driver Class : org.h2.Driver</p>
+			<p>- JDBC URL : jdbc:h2:mem:testdb</p>
+			<p>- User Name: sa</p>
+		</div>
 	</body>
 </html>
 
 <script type="text/javascript">
 $(document).ready(function(){
 	// 새창으로 테스트 케이스 수행
-	$("#rec, #cir, #json").click(function(){
+	$("#rec, #cir, #json, #console").click(function(){
 		var url = $(this).text();
 		window.open(url);
 	});
