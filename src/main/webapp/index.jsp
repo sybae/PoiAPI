@@ -1,0 +1,37 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="resources/jquery-3.1.1.min.js"></script>
+
+<html>
+	<body>
+		<h2>POI API (BSY - 2016.11.27)</h2>
+		<div>
+			<h3>Rectangle API</h3>
+			<p>- SCHEME : .../<b><u>rectangle</u></b>?<b><u>x1</u></b>= &<b><u>y1</u></b>= &<b><u>x2</u></b>= &<b><u>y2</u></b>=</p>
+			<p>- TEST CASE 1 : <a href="#" id="rec">http://localhost:8080/rectangle?x1=128&y1=34&x2=130&y2=34.7</a></p>
+			<p>- TEST CASE 2 : <a href="#" id="rec">http://localhost:8080/rectangle?x1=127.150004228&y1=37.3833556569&x2=127.130609154&y2=37.4140494219</a></p>
+		</div>
+		<br>
+		<div>
+			<h3>Circle API</h3>
+			<p>- SCHEME : .../<b><u>circle</u></b>?<b><u>x</u></b>= &<b><u>y</u></b>= &<b><u>radius</u></b>=</p>
+			<p>(※ 'radius' is Meter Unit)</p>
+			<p>- TEST CASE 1 : <a href="#" id="cir">http://localhost:8080/circle?x=128.44883116420243&y=35.263795115189694&radius=400</a></p>
+			<p>- TEST CASE 2 : <a href="#" id="cir">http://localhost:8080/circle?x=127.150004228&y=37.3833556569&radius=1000</a></p>
+		</div>
+		<br>
+		<div>
+			<h4>JSON Parser</h4>
+			<p><a href="#" id="json">http://json.parser.online.fr/</a></p>
+		</div>
+	</body>
+</html>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	// 새창으로 테스트 케이스 수행
+	$("#rec, #cir, #json").click(function(){
+		var url = $(this).text();
+		window.open(url);
+	});
+});
+</script>
