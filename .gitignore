@@ -11,6 +11,14 @@
 /bin/
 target/
 
+.history
+.classpath
+.project
+.settings
+.target
+.idea*
+.svn
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
