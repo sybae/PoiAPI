@@ -8,11 +8,9 @@ import javax.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.ModelAndView;
 
 import com.my.service.POIService;
 
@@ -68,19 +66,5 @@ public class POIController {
 		logger.info("#### circle | x = " + x + ", y = " + y + ", radius = " + radius);
 		
 		return poiService.circle(x, y, radius);
-	}
-	
-	/**
-	 * 초기 화면 제공
-	 * 
-	 * @param model
-	 * @return
-	 * @throws Exception
-	 */
-	@RequestMapping(value="/", method=RequestMethod.GET)
-	public ModelAndView guidebook(Model model) throws Exception {
-		ModelAndView mv = new ModelAndView();
-		mv.setViewName("index.jsp");
-		return mv;
 	}
 }
