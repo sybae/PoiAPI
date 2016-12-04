@@ -1,9 +1,11 @@
 POI API
 ===============================
 직사각형, 원형 범위내 POI 정보를 조회하는 API를 제공합니다.
+
 Spring Boot + Embedded Database H2 사용하였습니다.
 
 공공데이터포털(data.go.kr)의 ‘[전국공중화장실표준데이터](https://www.data.go.kr/subMain.jsp?param=REFUQUdSSURAMTUwMTI4OTI=#/L2NvbW0vY29tbW9uU2VhcmNoL2RhdGFzZXREZXRhaWwkQF4wMTJtMSRAXnB1YmxpY0RhdGFQaz0xNTAxMjg5MiRAXmJybUNkPU9DMDAwMyRAXm9yZ0luZGV4PURBVEFTRVQ=)’를 활용합니다.
+
 csv 데이터로 H2 DB 테이블 생성 및 인덱스를 적용합니다.
 
 
