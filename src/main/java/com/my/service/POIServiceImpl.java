@@ -25,11 +25,6 @@ public class POIServiceImpl implements POIService {
 	 */
 	public ArrayList<HashMap<String,Object>> rectangle(String x1, String y1, String x2, String y2) throws Exception {
 		
-		/**
-		 * 시간이 촉박하여 직접적으로 DB 접근하고, 쿼리 수행하는 방식으로 개발하였습니다.
-		 * 이 점 양해를 구합니다.
-		 */
-		
 		// H2 연결
 		Connection connection = DriverManager.getConnection("jdbc:h2:mem:testdb", "sa", "");
 		Statement statement = connection.createStatement();
@@ -69,11 +64,6 @@ public class POIServiceImpl implements POIService {
 	 * 원형 범위 내 POI 조회
 	 */
 	public ArrayList<HashMap<String, Object>> circle(String x, String y, String radius) throws Exception {
-		
-		/**
-		 * 시간이 촉박하여 직접적으로 DB 접근하고, 쿼리 수행하는 방식으로 개발하였습니다.
-		 * 이 점 양해를 구합니다.
-		 */
 		
 		// H2 연결
 		Connection connection = DriverManager.getConnection("jdbc:h2:mem:testdb", "sa", "");
